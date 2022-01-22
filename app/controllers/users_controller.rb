@@ -7,6 +7,7 @@ class UsersController < ApplicationController
   def create 
     @user = User.new(user_params)
     if @user.save
+      flash[:success] = "Welcome to Instagram!"
       redirect_to posts_url
     else
       render "new"

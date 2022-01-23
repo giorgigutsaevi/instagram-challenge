@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+body{
+	background-color: #fafafa;
+	margin-top: 5em;
+}
+
+h1{
+	font-family: 'Grand Hotel', cursive;
+}
+
+.hidden{
+	opacity: 0;
+}
+
+.login-wrapper{
+	border: 2px solid #efefef;
+	width: 20%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.container{
+	/* border: 2px solid blue; */
+
+}
+
+.login-btn{
+	background-color: #0095f6;
+	width: 100%;
+	margin-top: 2em;
+	color: whitesmoke;
+}
+
+.sign-up{
+	color: #0095f6;
+	font-weight: bold;
+	text-decoration: none;
+}

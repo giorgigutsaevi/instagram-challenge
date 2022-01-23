@@ -1,26 +1,55 @@
-<h1>Sign up for Instagram</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+    <%= stylesheet_link_tag "signup" %>
+</head>
+<body>
 
 
-<div class="row">
-  <div class="col-md-6 col-md">
-		<div class='form-control'>
-    <%= form_with(model: @user, local: true) do |f| %>
-			<%= render 'shared/error_messages' %>
+  <div class='container'>
+    <div class="row inner">
+      <div class="col-md">
+        <h1 class='text-center'>Instagram</h1>
+        <h5 class='text-center'>Sign up to see photos and videos from your friends.</h5>
+        <%= form_with(model: @user, local: true) do |f| %>
+          <%= render 'shared/error_messages' %>
 
-      <%= f.label :username %>
-      <%= f.text_field :username, class: 'form-control' %>
+          <%= f.label :username, class: "hidden" %>
+          <%= f.text_field :username, class: 'form-control', placeholder: "Enter username"%>
 
-      <%= f.label :email %>
-      <%= f.email_field :email, class: 'form-control' %>
+          <%= f.label :email, class: "hidden" %>
+          <%= f.email_field :email, class: 'form-control', placeholder: "Enter email" %>
 
-      <%= f.label :password %>
-      <%= f.password_field :password, class: 'form-control' %>
+          <%= f.label :password, class: "hidden"%>
+          <%= f.password_field :password, class: 'form-control', placeholder: "Enter password"%>
 
-      <%= f.label :password_confirmation, "Password Confirmation" %>
-      <%= f.password_field :password_confirmation, class: 'form-control' %>
+          <%= f.label :password_confirmation, "Password Confirmation", class: "hidden" %>
+          <%= f.password_field :password_confirmation, class: 'form-control', placeholder: "confirm password" %>
 
-      <%= f.submit "Create my account", class: "btn btn-primary" %>
-    <% end %>
-		</div>
+          <%= f.submit "Next", class: "btn next-button" %>
+        <% end %>
+
+     
+      </div>
+     
+    </div>
+     <div class='col-md'>
+        <div class='login-wrapper mt-5'> 
+          <p class='text-center'>Have an account? <%= link_to "Log in", login_path, class: 'sign-in' %> </p>
+        </div>
+      </div>
+      
   </div>
-</div>
+
+
+
+ 
+  
+</body>
+</html>
+

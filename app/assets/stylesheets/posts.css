@@ -1,0 +1,15 @@
+
+body{
+	border: 2px solid peru;
+	min-height: 90vh;
+}
+
+.posts-wrapper{
+	border: 2px solid green;
+	height: 80vh;
+
+}
+
+.account-wrapper{
+	border: 2px solid blue;
+}

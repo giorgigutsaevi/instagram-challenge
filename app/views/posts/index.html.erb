@@ -1,3 +1,38 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Posts</title>
+	<%= stylesheet_link_tag "posts" %>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 posts-wrapper">
+				<h1>Posts#index</h1>
+
+				<div>
+					<h6>post go below</h6>
+					<% @posts.each do |post| %>
+							<%= post.user.username %>
+							<p><%= post.title %></p>
+							<p><%= post.body %></p>
+							<% if post.image.attached? %>
+								<p> <%= image_tag post.image %></p>
+							<% end %>
+					<% end %>
+				</div>
+			</div>
+			<div class="col-md-4 account-wrapper">
+				<h2>Welcome</h2>
+					<h4>Current User: <%= current_user.username %> </h4> 
+			</div>
+		</div>
+	</div>
+
+	
+</body>
+</html>

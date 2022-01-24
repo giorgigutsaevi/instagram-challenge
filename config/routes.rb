@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   # root "posts#index"
   root "sessions#new"
+
+  get "posts/new", to: "posts#new"
   resources :posts
 
   get "signup", to: "users#new"

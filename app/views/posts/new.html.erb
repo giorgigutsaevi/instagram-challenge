@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Creating posts</title>
+</head>
+<body>
+	<h1>create posts here..</h1>
+	<div class="form-group">
+		  <%= form_with(model: @post, local: true) do |f| %>
+
+				<div class='form-comtrol'>
+					<%= f.label :title %>
+					<%= f.text_field :title %>
+				</div>
+		
+				<div class='form-comtrol'>
+					<%= f.label :body %>
+					<%= f.text_field :body %>
+				</div>
+				
+				<div class='form-comtrol'>
+					<%= f.label :image %> 
+					<%= f.file_field :image %> 
+				</div>
+
+				<%= f.submit "Post", :class => "btn btn-primary" %></div>
+			<% end %>
+	</div>
+
+	
+</body>
+</html>
+

@@ -72,3 +72,5 @@ group :test do
 end
 
 gem "bootstrap-sass", "~> 3.4"
+
+gem "image_processing", "~> 1.12"

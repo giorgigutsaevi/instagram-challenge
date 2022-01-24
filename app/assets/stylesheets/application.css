@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 
 body{
 	background-color: #fafafa;
@@ -23,7 +24,17 @@ h6{
 	justify-content: center;
 	margin-top: 0.5em;
 }
+
 li{
 	margin-left: 2em;
 }
 
+.home-icon{
+	color: black;
+	font-size: 1.4em;
+}
+.add-icon{
+	color: black;
+	font-size: 1.3em;
+	margin-left: 0.5em;
+}

@@ -1,15 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,600&display=swap');
 
 body{
-	border: 2px solid peru;
 	min-height: 90vh;
 }
 
 .posts-wrapper{
-	border: 2px solid green;
 	height: 80vh;
 
 }
 
 .account-wrapper{
-	border: 2px solid blue;
+	/* border: 2px solid blue; */
+}
+
+.post-author{
+	border: 2px solid gainsboro;
+	border-left: none;
+	border-right: none;
+	font-size: 1em;
+	font-weight: bolder;
+	padding: 0.4em;
+	padding-left: 0.7em;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	margin-top: 1em;
+
+}
+
+.insta-individual{
+	border: 2px solid gainsboro;
+	border-top: none;
+}
+
+.post-body{
+	border: 2px solid gainsboro;
+	border-left: none;
+	border-right: none;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	padding: 0.4em;
+}
+
+.post-title-and-caption{
+	display: flex;
+	align-items: baseline;
+	border-top: 2px solid gainsboro;
+
+}
+
+.insta-author{
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.767);
+}
+
+.insta-caption{
+	margin-left: 0.6em;
+}
+
+.welcome-msg{
+	font-family: 'Source Sans Pro', sans-serif;
 }

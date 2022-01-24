@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,600&display=swap');
+
+body{
+	background-color: #fafafa;
+}
+h1{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.add-new{
+	border: 2px solid gainsboro;
+	font-family: 'Source Sans Pro', sans-serif;
+	width: 20%;
+	margin: auto;
+	margin-top: 5em;
+	padding: 2em;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+input{
+	margin-top: 2em;
+}
+
+label{
+	margin-top: 0.5em;
+}

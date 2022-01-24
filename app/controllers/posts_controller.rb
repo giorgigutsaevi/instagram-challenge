@@ -10,7 +10,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = current_user.posts.new post_params
+    @post = current_user.posts.new(post_params)
     @post.save
     if @post.save
       redirect_to posts_url
@@ -19,7 +19,6 @@ class PostsController < ApplicationController
       redirect_to new_post_path(@post)
     end
   end
-
 
   private 
   def post_params

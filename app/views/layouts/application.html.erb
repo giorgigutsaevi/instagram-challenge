@@ -23,8 +23,20 @@
           <div class="col-md">
             <nav>
               <ul class='nav navbar-nav my-ul'>
-                <li> <%= link_to "Home", "#"%>  </li>
-                <li> <%= link_to "Help", "#"%>  </li>
+                <%= link_to posts_path, class: 'home-icon' do %>
+                  <i class="bi bi-house-door-fill"></i> 
+                <% end %>
+
+                <%= link_to "posts/new", class: 'add-icon' do %>
+                  <i class="bi bi-plus-square"></i>
+                 <% end %>
+
+                  <%= link_to "/users/#{current_user.id}", class: 'add-icon' do %>
+                  <i class="bi bi-person-square"></i>
+                 <% end %>
+
+
+
                 <% if logged_in? %>
                   <li> <%= link_to "Log out", logout_path, method: "delete" %> </li>
                 <% else %>
